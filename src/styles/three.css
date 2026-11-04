@@ -1,0 +1,15 @@
+.vessel-wrap { position: relative; height: 560px; border-radius: var(--r); overflow: hidden; background: radial-gradient(ellipse at 50% 30%, #18222e, #07090c 70%); border: 1px solid var(--border); }
+.vessel-wrap.mini { height: 360px; }
+.vessel-wrap canvas { display: block; }
+.vessel-hud { position: absolute; left: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; z-index: 2; pointer-events: none; }
+.vessel-hud .chip { pointer-events: auto; background: #0d1319cc; backdrop-filter: blur(4px); }
+.vessel-tools { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; z-index: 2; }
+.vessel-tools .btn { background: #0d1319d9; font-size: 11.5px; padding: 5px 9px; }
+.vessel-tools .btn[aria-pressed="true"] { border-color: var(--molten); color: var(--molten2); }
+.vessel-scrub { position: absolute; left: 10px; right: 10px; bottom: 10px; display: flex; gap: 10px; align-items: center; background: #0d1319d9; padding: 7px 10px; border-radius: 8px; z-index: 2; border: 1px solid var(--border); flex-wrap: wrap; }
+.vessel-scrub input[type="range"] { flex: 1; min-width: 120px; }
+.vessel-label { color: #dfe8f2; font: 600 11px var(--font); background: #0b1118cc; border: 1px solid #2b3a4c; padding: 2px 6px; border-radius: 5px; white-space: nowrap; pointer-events: none; }
+.vessel-label.hot { color: var(--molten2); border-color: #6b3a10; }
+.schematic-label { font: 600 11px var(--font); }
+.schematic text { font-family: var(--font); }
+.cfd-note { position: absolute; bottom: 58px; right: 12px; font-size: 10.5px; color: var(--dim); z-index: 2; background: #0b1118aa; padding: 2px 6px; border-radius: 4px; }
